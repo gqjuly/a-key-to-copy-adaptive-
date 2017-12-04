@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>一键复制</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src=""></script>
+</head>
+<body>
+	<textarea cols="20" rows="10" id="copyId"> 请输入。。。</textarea>
+	<button onclick="copyKey()">复制</button>
+
+	<script type="text/javascript">
+		function copyKey(){
+			var textDoc = document.getElementById("copyId");
+			textDoc.select();   //选择对象
+			document.execCommand("Copy");   //执行浏览器复制命令
+			alert("复制成功");
+		}
+	</script>
+	
+</body>
+</html>
